@@ -17,7 +17,6 @@ public class OutputFormatter implements IKwicOutput, Runnable {
         if (alphaLines != null) {
             try {
                 buffer.put(alphaLines);
-                outputToStdOut();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

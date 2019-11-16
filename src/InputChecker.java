@@ -10,7 +10,7 @@ class InputChecker implements Runnable {
      */
     private static BlockingQueue<List<String>> buffer;
     private static CircularShifter csInstance;
-    private IKwicInput inputSource;
+    private static IKwicInput inputSource;
 
     InputChecker(CircularShifter cs, IKwicInput input) {
         csInstance = cs;
